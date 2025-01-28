@@ -15,28 +15,30 @@
       <section>
         <img
           class="img"
-          src="../images/caterina.png"
+          src="../images/image0.jpg"
           width="200"
-          height="200" />
+          height="200" 
+          alt="Picture of Alex Yu"/>
         <p class="bio">
-          My name is Caterina and I will be teaching CS 463/563: Intro to Web
-          Development this quarter. Let's get started with the first homework
-          assignment. The first thing we'll do is figure out how to run code
-          checks for accessibility, formatting, and valid HTML and CSS code.
+          Hello! My name is Alex Yu. 
+          I am a first year graduate student here at PSU
+          studying Computer Science. Computers are my life and I love doing all things
+          related to it. I also have way too many hobbies ranging from music, working 
+          on cars, to building keyboards.
         </p>
       </section>
       <hr />
       <section>
-        <REPLACE_ME class="sub-title">About PSU</REPLACE_ME>
-        <REPLACE_ME class="greeting-message">
+        <h2 class="sub-title">About PSU</h2>
+        <div class="greeting-message">
           Welcome to
-          <REPLACE_ME class="greeting-italic"
+          <span class="greeting-italic"
             >The School of Engineering at
-          </REPLACE_ME>
-          <REPLACE_ME class="greeting-emphasis"
-            >Portland State University</REPLACE_ME
+        </span>
+          <span class="greeting-emphasis"
+            >Portland State University</span
           >
-        </REPLACE_ME>
+        </div>
         <img class="img" src="../images/psu-eb.jpg" alt="..." />
         <p class="general-text engineering-building-description">
           The Engineering Building is a concrete and glass, five-story building
@@ -48,18 +50,18 @@
         </p>
       </section>
       <section>
-        <REPLACE_ME class="sub-title">New Student Orientation</REPLACE_ME>
-        <REPLACE_ME class="general-text">
+        <h2 class="sub-title">New Student Orientation</h2>
+        <p class="general-text">
           New Student Orientation is an essential part of your undergraduate
           college experience, provides a foundation for success, and is
-          <REPLACE_ME class="boldfaced-text">
+          <strong class="boldfaced-text">
             required for all incoming undergraduate students.
-          </REPLACE_ME>
+          </strong>
           New Student Orientation will provide you with details about campus
           life, student services, degree requirements, and, upon completion,
           will provide you with course registration access for your first term.
-        </REPLACE_ME>
-        <REPLACE_ME class="general-text">
+        </p>
+        <p class="general-text">
           View
           <a
             href="https://www.pdx.edu/admissions/deadlines#enrollment-confirmation"
@@ -67,100 +69,111 @@
           >
           and other
           <a href="https://www.pdx.edu/admissions/deadlines">Important Dates</a>
-        </REPLACE_ME>
+        </p>
       </section>
-      <REPLACE_ME class="sub-title">Application Information</REPLACE_ME>
-      <REPLACE_ME class="general-grouped-info">
-        <REPLACE_ME class="sub-sub-title"
-          >Submit Your Application and $60 Application Fee</REPLACE_ME
+      <h2 class="sub-title">Application Information</h2>
+      <div class="general-grouped-info">
+        <h3 class="sub-sub-title"
+          >Submit Your Application and $60 Application Fee</h3
         >
-        <REPLACE_ME class="general-text">
+        <p class="general-text">
           Go to Portland State University's online application system and select
           Create Account. If you have already started an application, or created
           one for a past term, select Log In.
-        </REPLACE_ME>
-        <REPLACE_ME class="general-text">
+        </p>
+        <p class="general-text">
           Undergraduate applicants may be eligible for a waiver of their $60
           admission application fee. Based on the information you provide in
           your application, we will determine if you are eligible for a fee
           waiver.
-        </REPLACE_ME>
-      </REPLACE_ME>
-      <REPLACE_ME class="general-grouped-info">
-        <REPLACE_ME class="sub-sub-title"
-          >Submit Transcripts from All Schools Attended</REPLACE_ME
+        </p>
+      </div>
+      <div class="general-grouped-info">
+        <h3 class="sub-sub-title"
+          >Submit Transcripts from All Schools Attended</h3
         >
-        <REPLACE_ME class="general-text">
+        <p class="general-text">
           You are required to submit individual transcripts from each college or
           university where you registered for any coursework. Failure to submit
           individual transcripts from each college or university attended may
           result in a delayed admission decision. Official transcripts are
           required from all the schools you've attended, see our official
           records policy for details.
-        </REPLACE_ME>
-        <REPLACE_ME class="general-text">
+        </p
+        <p class="general-text">
           Failure to disclose all colleges is a violation of Portland State
           University's student code of conduct.
-        </REPLACE_ME>
-      </REPLACE_ME>
-      <REPLACE_ME class="general-grouped-info">
-        <REPLACE_ME class="sub-sub-title"
+        </p>
+      </div>
+      <div class="general-grouped-info">
+        <h3 class="sub-sub-title"
           >Submit the Free Application for Federal Student Aid
-          (FAFSA)</REPLACE_ME
+          (FAFSA)</h3
         >
-        <REPLACE_ME class="general-text">
+        <p class="general-text">
           Submission of the FAFSA is not required to receive an admission
           decision. We encourage students to submit the FAFSA as soon as
           possible after October 1.
-        </REPLACE_ME>
-      </REPLACE_ME>
-      <REPLACE_ME class="general-grouped-info">
-        <REPLACE_ME class="sub-sub-title"
-          >Check Your Application Status</REPLACE_ME
+        </p>
+      </div>
+      <div class="general-grouped-info">
+        <h3 class="sub-sub-title"
+          >Check Your Application Status</h3
         >
-        <REPLACE_ME class="general-text">
+        <p class="general-text">
           If you have submitted an application to Portland State University, you
           can log in to PSU's application portal to review the status of your
           application. You will be notified via email for each document you
           submit and your admission decision.
-        </REPLACE_ME>
-      </REPLACE_ME>
+        </p>
+      </p>
       <section>
-        <REPLACE_ME class="sub-title">Submit your Information</REPLACE_ME>
+        <h2 class="sub-title">Submit your Information</h2>
         <form>
-          <div>Name</div>
-          <input type="text" />
-          <div>Email</div>
-          <input type="text" />
-          <div>Region</div>
-          <input type="text" />
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" />
+          </div>
+          <div>
+            <label for="region">Region</label>
+            <input type="text" id="region" name="region" />
+          </div>
           <div>
             For best performance, enter a region closest to your application
-          </div>
+          </div>        
           <div class="radio-buttons">
-            <div>Plan type</div>
-            <input type="radio" />
-            <label for="basic">Basic</label>
-            <input type="radio" />
-            <label for="business">Business</label>
-            <input type="radio" />
-            <label for="pro">Pro</label>
+            <fieldset>
+              <legend>Plan type</legend>
+              <input type="radio" id="basic" name="plan" />
+              <label for="basic">Basic</label>
+              <input type="radio" id="business" name="plan" />
+              <label for="business">Business</label>
+              <input type="radio" id="pro" name="plan" />
+              <label for="pro">Pro</label>
+            </fieldset>
           </div>
           <div class="checkboxes">
-            <div>Included Fields</div>
-            <input type="checkbox" />
-            <label>Name</label>
-            <input type="checkbox" />
-            <label>Role</label>
-            <input type="checkbox" />
-            <label>Email</label>
-            <input type="checkbox" />
-            <label>Company Name</label>
-            <input type="checkbox" />
-            <label>Description</label>
-            <input type="checkbox" />
-            <label>Type</label>
+            <fieldset>
+              <legend>Included Fields</legend>
+              <input type="checkbox" id="checkBoxName" name="field" />
+              <label for="checkBoxName">Name</label>
+              <input type="checkbox" id="role" name="field" />
+              <label for="role">Role</label>
+              <input type="checkbox" id="checkBoxEmail" name="field" />
+              <label for="checkBoxEmail">Email</label>
+              <input type="checkbox" id="company-name" name="field" />
+              <label for="company-name">Company Name</label>
+              <input type="checkbox" id="description" name="field" />
+              <label for="description">Description</label>
+              <input type="checkbox" id="type" name="field" />
+              <label for="type">Type</label>
+            </fieldset>
           </div>
+          
           <button>Create</button>
           <button>Reset</button>
         </form>
