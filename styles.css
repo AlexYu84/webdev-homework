@@ -3,7 +3,7 @@
 }
 
 :root {
-  --white: #ffffff;
+  --white: #fefefe;
   --gray1: #333333;
   --gray2: #555555;
   --gray3: #cccccc;
@@ -30,7 +30,6 @@ body {
 h1 {
   text-align: center;
 }
-
 
 form {
   width: 400px;
