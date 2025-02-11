@@ -1,1 +1,152 @@
 /* Add your code here */
+/* Global styling stuff */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation suff */
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Navigation Link stuff */
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 25px;
+    text-decoration: none;
+    background-color: black; /* Background color set to black */
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+.navbar a:hover {
+    background-color: rgb(160, 12, 150);
+    color: black;
+}
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center; /* Center the cards within the container */
+    gap: 16px; /* Add space between the cards */
+    max-width: 1200px; /* Adjust as needed */
+    justify-content: flex-start;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 16px;
+    text-align: center;
+}
+
+.card p {
+    margin: 16px 0; /* Space around the paragraph */
+}
+
+.more-info {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 250px;
+}
+
+.more-info:hover {
+    background-color: rgb(160, 12, 150);
+    color: black;
+}
+
+/* Table Stuff */
+table{
+    width: 80%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: start;
+}
+
+th {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+/* First Row Styling */
+thead tr {
+    background-color: black;
+}
+
+td:first-child {
+    background-color: purple;
+    color: white;
+    text-align: center;
+}
+
+tbody tr:hover td:not(:first-child) {
+    background-color: orange; /* Highlight color */
+}
+
+legend {
+    font-weight: bold; /* Make text bold */
+    font-size: 1.5em; /* Adjust font size if needed */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold; /* Make text bold */
+    font-size: 1.5em; /* Adjust font size if needed */
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+/* Button stuff */
+button {
+    font-size: 18px; /* Make buttons bigger */
+    padding: 10px 60px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+}
+
+.submit-btn:hover {
+    background-color: purple;
+}
+
+.reset-btn {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.reset-btn:hover {
+    background-color: #ddd
+}
