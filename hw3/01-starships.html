@@ -7,22 +7,125 @@
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="styles.css" />
     <!-- todo: include bootstrap.css file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script defer src="01-starships.js"></script>
     <!-- todo: include bootstrap.js file -->
   </head>
+
+  </style>
   <body>
-    <header></header>
-    <main>
-      <h1>HW 3</h1>
-      <section id="welcome">
-        <h2>Welcome</h2>
-      </section>
-      <section id="starships">
-        <h2>Starships</h2>
-      </section>
-      <section id="form">
-        <h2>Form</h2>
-      </section>
-    </main>
-  </body>
-</html>
+    <body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-md" style="background-color: #242323;">
+        <a class="navbar-brand" href="#" style="color: #fff;">Homework #3</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#welcome" style="color: #a49b9b;">Welcome</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#starships" style="color: #a49b9b;">Starships</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#form" style="color: #a49b9b;">Form</a>
+                </li>
+            </ul>
+        </div>
+    </nav>    
+
+  <section id="welcome">
+
+  </section>
+  
+  <h2 class="text-center mb-4">Starships</h2>
+  <section id="starships">
+
+  </section>
+
+  <section id="form" class="d-flex align-items-center justify-content-center vh-100">
+    <div class="row justify-content-center w-100">
+        <div class="col-10 col-md-6 col-lg-4">
+            <h2 class="text-center mb-4">Sign Up Form</h2>
+            <p class="text-center mb-4">Fill out items in the form below</p>
+            <form id="userForm" class="needs-validation bg-light p-4 rounded shadow" novalidate>
+                <!-- Name Input -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                    <div class="invalid-feedback">Name is required.</div>
+                </div>
+
+                <!-- Username Input -->
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" class="form-control" placeholder="Choose a username" required>
+                    <div class="invalid-feedback">Username is required.</div>
+                </div>
+
+                <!-- Email Input -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                    <div class="invalid-feedback">A valid email is required.</div>
+                </div>
+
+                <!-- Password Input -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Enter a secure password" required>
+                    <div class="invalid-feedback">Password is required.</div>
+                </div>
+
+                <!-- Date of Birth Selector -->
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" class="form-control" required>
+                    <div class="invalid-feedback">Date of birth is required.</div>
+                </div>
+
+                <!-- Preferred Pronoun Radio Buttons -->
+                <div class="form-group">
+                  <fieldset>
+                      <legend>Preferred Pronouns</legend>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="pronouns" id="sheHer" value="she/her" required>
+                          <label class="form-check-label" for="sheHer">She/Her</label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="pronouns" id="heHim" value="he/him" required>
+                          <label class="form-check-label" for="heHim">He/Him</label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="pronouns" id="theyThem" value="they/them" required>
+                          <label class="form-check-label" for="theyThem">They/Them</label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="pronouns" id="other" value="other" required>
+                          <label class="form-check-label" for="other">Other</label>
+                      </div>
+                      <div class="invalid-feedback">Please select your preferred pronouns.</div>
+                  </fieldset>
+                </div>
+                             
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+        </div>
+    </div>
+  </section>
+
+
+
+
+
+    <!-- Include Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Include Custom JS -->
+    <script defer src="01-starships.js"></script>
+</body>
