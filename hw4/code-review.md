@@ -2,41 +2,9 @@
 
 Write your code review here in markdown format. 
 
-## Issue #1 Accessibility: ##
+## Issue 1 HTML Semantics: ##
 
-The issue, why this is an issue, and the solution.
-
-To start off, using an accessibility evaluation tool like wave, it points out that there are two empty buttons. What this means is that "a button is empty or has no value text" and what that means is that it is missing elements assitive technologies like screen readers are unable to interpret the purpose of these buttons. The reason why this is so important is because it impacts the accessbility and user experience. Without clear labels or descriptions, users with visual impairments could possibily make the webpage unusable. 
-
-The solution to this is to simply add the an aria-label exactly like how it has already been done in the code of the pop up next to it. 
-
-```html
-    <span ...>*aria-label="close popup window"*</span>
-```
-
-![image of accessibility issue](hw4/code-review-repository/images/image.png)
-
-
-## Issue #2 Form Information: ##
-
-For this issue, I noticed that the two buttons, 'Submit' and 'Reset,' located at the end of the page, not only fail to submit or reset but also do nothing at all, as there is no JavaScript code attached to them. While this may be just be a placeholder for the form submission, I believe that it is important to at least have code that saves the information similarly to the last assignment where it required us to collect the form data and print it to the console.
-
-Adding JavaScript to handle form data helps make it clear what the form is supposed to do, even if it's still a work in progress. For example, using JavaScript to capture user input, check it, and print it to the console—like we did in the last assignment—shows that the form can collect and process data. This is useful for making sure everything is set up correctly, and it also creates a good starting point for adding more features later, like sending the data to a server or giving users feedback as they fill out the form. Even small functionality like this makes placeholders more useful and practical.
-
-The solution to this is to add Javascript code that connects to the form similarly to assignment 3 starships:
-
-```javascript
-    form.addEventListener('submit', (event) => {
-        ...
-    })
-```
-
-![gif of me clicking submit as well as reset](hw4/code-review-repository/images/examplegif.gif)
-
-
-## Issue 3 HTML Semantics: ##
-
-For the third significant issue, I found that the reset button, as well as the submit button, doesn't have any functionality. As a result, both buttons currently serve no purpose and could potentially cause inconvenience, frustration, and confusion for users. This is due to the fact that they are not associated with the form within the index.html. This can be fixed by moving the the buttons inside the form so they automatically reset and submit.
+For the first significant issue, I found that the 'Submit' button, as well as the 'Reset' button, doesn't have any functionality. As a result, both buttons currently serve no purpose and could potentially cause inconvenience, frustration, and confusion for users. This is due to the fact that they are not associated with the form within the index.html. This can be fixed by moving the the buttons inside the form so they automatically reset and submit.
 
 ```html
     <div
@@ -47,13 +15,37 @@ For the third significant issue, I found that the reset button, as well as the s
 </form>
 ```
 
-## Issue 4 more HTML Semantics: ##
+## Issue 2 HTML Semantics, CSS, & Accessibility: ##
 
-The last issue I found was a checkbox naming consistency where in lines 439 and below, the cats could possibly have the same name attribute. For grouping checkboxes under the same category, they should share a single name value since this could make data handling easier when the form is submitted.
+The next significant issue I found was within the section after the navbar with the very first image. While it uses CSS to portray the image, it does not have any alternate text for accessible use or if the image just simply does not load. This is important for those very reasons. The quick fix for this would be to add an aria-label for screen readers to be able to interpret this. However, this would not solve the issue if the image does not load properly. To my knowledge, in order to fix this, an `<img>` element is the best way to have best of both worlds but this. This however, would require you to adjust the CSS around the image again in order to get the image to display correctly.
 
 ```html
-    <input type="checkbox" id="siamese" name="breed1" value="siamese" />
+    <div class="landing-image" aria-label="a picture of a scottish..."></div>
 
-    <input type="checkbox" id="british-shorthair" name="breed2" value="british-shorthair" />
+    or
+
+    <img src="./images/1920px-Adult_Scottish_Fold.jpg"landing-image" aria-label="a picture of a scottish..." alt="a picture of a scottish...">
+
+```
+
+## Issue 3 More HTML Semantics ##
+
+For my final significant issue, I found that in 355-389 of index.html. It uses a `<div>` with a lot of `<p>` elements within it. While it achieves its purpose within the final result of the webpage, I believe this semantically doesn't make sense. To screen readers, it wouldn't read it as a list but instead each paragraph individually without indicating that they are related items. Another issue could be if someone else works on the code. They would not immediately understand what that section of code is for. 
+
+This fix to this would be to use semantics that makes sense like a `<ul>` element. This of course, would need you to adjust the CSS file again to potray it the same/nicely.
+
+```html
+
+<ul>
+  <li>They all have one common ancestor: Susie</li>
+  <li>The fold is due to a mutation</li>
+  <li>They're born with straight ears</li>
+  <li>Scottish folds are never bred together</li>
+  <li>There are three degrees of folds</li>
+  <li>They sit like humans</li>
+  <li>They need a gentle touch</li>
+  <li>They're the only folded-ear cats that can show</li>
+  <li>They're T-Swift approved</li>
+</ul>
 
 ```
